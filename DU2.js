@@ -1,5 +1,5 @@
 
-/* podle zadání */
+// podle zadání 
 
 const FlavourHavenPrice = 750  ; //cena člověk
 const YourMamaPrice = 500 ;
@@ -7,22 +7,22 @@ const JustFoodPrice = 350 ;
 
 const HavenPicked = (numberOfPeople) => {
     const havenOrder = numberOfPeople*FlavourHavenPrice;
-    return `you picked Flavour Haven for ${havenOrder} for ${numberOfPeople}`
+    return `Catering od Flavour Haven za ${havenOrder} pro ${numberOfPeople}`
 }
 
 const YourPicked = (numberOfPeople) => {
     const yourOrder = numberOfPeople* YourMamaPrice;
-    return `you picked Your Mama for ${yourOrder} for ${numberOfPeople}`
+    return ` Catering od Your Mama za ${yourOrder} pro ${numberOfPeople}`
 }
 
 const JustPicked = (numberOfPeople) => {
     const justOrder = numberOfPeople*JustFoodPrice;
-    return `you picked Just Food for ${justOrder} for ${numberOfPeople}`
+    return `Catering od Just Food za ${justOrder} pro ${numberOfPeople}`
 }
 
 const createEvent = (specialDay, numberOfPeople, JustPicked) => {
     const cateringMessage = JustPicked(numberOfPeople);
-    return `For ${specialDay} ${cateringMessage} people`
+    return `Pro událost ${specialDay} s ${cateringMessage} lidí`
 }
 
 console.log(createEvent("Inaugurace prezidenta", 100, HavenPicked));
@@ -32,7 +32,7 @@ console.log(createEvent("Dětská oslava", 30, JustPicked));
 
 
 /* tohle je to samé zadání ale s formulářem pro příchozího člověka do mé smyšlené internetové platformy "CatBooking" (catering booking) poskytující 
-výběr z několika cateringových firem najednou
+výběr z několika cateringových firem najednou 
 
 const setPrice = 1000;
 const FlavourHavenPrice = setPrice;
@@ -89,7 +89,7 @@ numberOfPeopleElement.addEventListener('input', () => {
 
 
      */
-*/
+
 
 
 
